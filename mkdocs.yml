@@ -2,6 +2,9 @@ site_name: Terminal-Based Text Editors
 nav:
   - Home: index.md
   - Introduction: 01_introduction.md
+  - Nano: 02_nano.md
+  - Vim: 03_vim.md
+  - Emacs: 04_emacs.md
 theme: 
   name: material
 
