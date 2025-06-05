@@ -539,10 +539,18 @@
 | Insert                     | Esc    |                              | N/A        |
 | Command-line               | <em>1     | :start                       |            |
 For a more complete chart showing the switch commands between all 7 BASIC modes, follow <a href="https://vimhelp.org/intro.txt.html#mode-switching">this link</a> to the official documentation.
-</em>1 - Go from Command-line to Normal by:
-* Hitting <CR> or <NL>, which causes the entered command to be executed.
-* Deleting the complete line, such as with <code>CTRL+U</code>, and giving a final <BS>.
-* Hitting <code>CTRL+C</code> or <code>Esc</code>, which quits without executing the command.</p>
+</em>1 - Go from Command-line to Normal by:</p>
+<ul>
+<li>
+<p>Hitting <CR> or <NL>, which causes the entered command to be executed.</p>
+</li>
+<li>
+<p>Deleting the complete line, such as with <code>CTRL+U</code>, and giving a final <BS>.</p>
+</li>
+<li>
+<p>Hitting <code>CTRL+C</code> or <code>Esc</code>, which quits without executing the command.</p>
+</li>
+</ul>
 <h3 id="open-a-file">Open a File</h3>
 <pre><code class="language-bash">vim filename.txt
 </code></pre>
@@ -551,13 +559,21 @@ For a more complete chart showing the switch commands between all 7 BASIC modes,
 </ul>
 <h3 id="edit-or-insert-text">Edit or Insert Text</h3>
 <ul>
-<li>Switch to Insert mode with one of the above commands.</li>
-<li>You can now type and edit text as in a regular editor.</li>
+<li>
+<p>Switch to Insert mode with one of the above commands.</p>
+</li>
+<li>
+<p>You can now type and edit text as in a regular editor.</p>
+</li>
 </ul>
 <h3 id="save-changes">Save Changes</h3>
 <ul>
-<li>Ensure you are in Normal mode by pressing the <code>Esc</code> key.</li>
-<li>Type <code>:w</code> and press <code>Enter</code> (This writes the file to disk.)</li>
+<li>
+<p>Ensure you are in Normal mode by pressing the <code>Esc</code> key.</p>
+</li>
+<li>
+<p>Type <code>:w</code> and press <code>Enter</code> (This writes the file to disk.)</p>
+</li>
 </ul>
 <h3 id="save-and-quit">Save and Quit</h3>
 <ul>
@@ -575,21 +591,35 @@ For a more complete chart showing the switch commands between all 7 BASIC modes,
 <p>and press <code>Enter</code>.</p>
 <h3 id="search-for-text">Search for Text</h3>
 <ul>
-<li>Begin your search by pressing <code>/</code> or <code>?</code> in Normal mode.</li>
-<li><code>/</code> will search forward; <code>?</code> will search backwards.<blockquote>
-<p>Forward and backward referring to where your cursor is placed in a document.</p>
-</blockquote>
+<li>
+<p>Begin your search by pressing <code>/</code> or <code>?</code> in Normal mode.</p>
+</li>
+<li>
+<p><code>/</code> will search forward; <code>?</code> will search backwards.</p>
 </li>
 </ul>
+<blockquote>
+<p>Forward and backward referring to where your cursor is placed in a document.</p>
+</blockquote>
 <pre><code class="language-vim">/searching_below
 ?searching_above
 </code></pre>
 <ul>
-<li>Type your search term and press <code>Enter</code>:</li>
-<li><code>n</code> will then repeat the search in the same direction as chosen.</li>
-<li><code>N</code> will search in the opposite direction.</li>
-<li><code>vim</code> uses regex by default in searches.</li>
-<li>Searches are case-sensitive by default. Add <code>\c</code> to make a search case-insensitive:</li>
+<li>
+<p>Type your search term and press <code>Enter</code>:</p>
+</li>
+<li>
+<p><code>n</code> will then repeat the search in the same direction as chosen.</p>
+</li>
+<li>
+<p><code>N</code> will search in the opposite direction.</p>
+</li>
+<li>
+<p><code>vim</code> uses regex by default in searches.</p>
+</li>
+<li>
+<p>Searches are case-sensitive by default. Add <code>\c</code> to make a search case-insensitive:</p>
+</li>
 </ul>
 <pre><code class="language-vim">/searchterm\c
 </code></pre>
