@@ -11,8 +11,11 @@ All that being said: when utilized to their fullest, text editors can streamline
 * Search for text within a file.
 ## Choosing an editor
 When selecting an editor, the right choice for you will depend on your needs, experience level, and editing habits:
+
 * `nano` is best for beginners or quick edits, with a simple interface that includes helpful commands at the bottom of the screen. If you're only intending on changing a config file or writing a short script without learning many commands, `nano` is ideal. 
+
 * `Vim` offers speed and precision for experienced users. Once learned, `Vim` is extremely efficient for navigating and editing code or text at high speed. Choose `Vim` if you work frequently in the terminal and want a powerful, scriptable tool. 
+
 * `Emacs` is a full-fledged programmable environment, not just an editor. It supports extensive customization, plugins, and even embedded shells or mail clients. It's a strong choice if you prefer a keyboard-driven workflow and want to integrate many tools into a single interface, but has a steeper learning curve than the other two editors. 
 
 This lesson will be working under the assumption of a GNU/Linux installation, such as Ubuntu or Debian, which can be downloaded by following [this link to the official Linux download page.](https://www.linux.org/pages/download/)
