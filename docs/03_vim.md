@@ -54,3 +54,28 @@ and press `Enter`.
 ```
 and press `Enter`.
 ### Search for Text
+* Begin your search by pressing `/` or `?` in Normal mode.
+* `/` will search forward; `?` will search backwards.
+> Forward and backward referring to where your cursor is placed in a document.
+```vim
+/searching_below
+?searching_above
+```
+* Type your search term and press `Enter`:
+* `n` will then repeat the search in the same direction as chosen.
+* `N` will search in the opposite direction.
+* `vim` uses regex by default in searches.
+* Searches are case-sensitive by default. Add `\c` to make a search case-insensitive:
+```vim
+/searchterm\c
+```
+* Or set the option globally:
+```vim
+:set ignorecase
+:set smartcase
+```
+* For literal strings (without regex): use `\v` at the start of your search.
+
+---
+
+[Click here](04_emacs.md) to continue to the next section to learn the basics for `Emacs`.
