@@ -574,6 +574,36 @@ For a more complete chart showing the switch commands between all 7 BASIC modes,
 </code></pre>
 <p>and press <code>Enter</code>.</p>
 <h3 id="search-for-text">Search for Text</h3>
+<ul>
+<li>Begin your search by pressing <code>/</code> or <code>?</code> in Normal mode.</li>
+<li><code>/</code> will search forward; <code>?</code> will search backwards.<blockquote>
+<p>Forward and backward referring to where your cursor is placed in a document.</p>
+</blockquote>
+</li>
+</ul>
+<pre><code class="language-vim">/searching_below
+?searching_above
+</code></pre>
+<ul>
+<li>Type your search term and press <code>Enter</code>:</li>
+<li><code>n</code> will then repeat the search in the same direction as chosen.</li>
+<li><code>N</code> will search in the opposite direction.</li>
+<li><code>vim</code> uses regex by default in searches.</li>
+<li>Searches are case-sensitive by default. Add <code>\c</code> to make a search case-insensitive:</li>
+</ul>
+<pre><code class="language-vim">/searchterm\c
+</code></pre>
+<ul>
+<li>Or set the option globally:</li>
+</ul>
+<pre><code class="language-vim">:set ignorecase
+:set smartcase
+</code></pre>
+<ul>
+<li>For literal strings (without regex): use <code>\v</code> at the start of your search.</li>
+</ul>
+<hr />
+<p><a href="../04_emacs/">Click here</a> to continue to the next section to learn the basics for <code>Emacs</code>.</p>
 
 
 

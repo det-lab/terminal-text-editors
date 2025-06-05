@@ -358,27 +358,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#savewrite-changes" class="md-nav__link">
+  <a href="#save-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Save/Write Changes
+      Save Changes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-and-quit" class="md-nav__link">
+  <a href="#quit" class="md-nav__link">
     <span class="md-ellipsis">
-      Save and Quit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quit-without-saving" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quit Without Saving
+      Quit
     </span>
   </a>
   
@@ -461,27 +452,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#savewrite-changes" class="md-nav__link">
+  <a href="#save-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Save/Write Changes
+      Save Changes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-and-quit" class="md-nav__link">
+  <a href="#quit" class="md-nav__link">
     <span class="md-ellipsis">
-      Save and Quit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quit-without-saving" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quit Without Saving
+      Quit
     </span>
   </a>
   
@@ -518,13 +500,50 @@
 
 
 <h1 id="emacs-basics">Emacs Basics</h1>
+<p><code>GNU Emacs</code>, or more simply: <code>Emacs</code>, is a family of text editors notable for their extensibility. As mentioned before, <code>Emacs</code> has a steeper learning curve than the other two options, with over 10,000 built-in commands and a UI which allows for these commands to be combined into automated macros, giving us the name of the software from "Editor Macros."  </p>
+<p>The latest version of <code>Emacs</code> can be downloaded by following <a href="https://www.gnu.org/software/emacs/download.html">this link to the official site.</a> You can also install it from the terminal by running:</p>
+<pre><code class="language-bash">sudo apt-get install emacs
+</code></pre>
+<p>You can then open <code>Emacs</code> by typing:</p>
+<pre><code class="language-bash">emacs
+</code></pre>
+<p>And pressing <code>Enter</code>. This will open the graphical window, which should look similar to this depending on your installation:
+<img alt="Emacs installation screen" src="../images/Emacs-startup.png" /></p>
 <h2 id="basic-commands">Basic Commands:</h2>
+<p><code>Emacs</code> commands will generally involve the CONTROL (CTRL or CTL) key and the META key (sometimes EDIT or ALT). It is recommended to follow along with the <code>Emacs Tutorial</code> section which is the first link visible on startup.</p>
 <h3 id="open-a-file">Open a File</h3>
+<p>From the terminal, you can create or open a file by entering the appropriate directory and entering:</p>
+<pre><code class="language-bash">emacs filename.txt
+</code></pre>
+<ul>
+<li>This opens the specified file in a new <code>Emacs</code> window. If the file doesn't exist yet, <code>Emacs</code> will create it when you save.
+You can also start <code>Emacs</code> and open a file from within it by pressing <code>CTRL+X</code> and then <code>CTRL+F</code>.</li>
+</ul>
 <h3 id="edit-or-insert-text">Edit or Insert Text</h3>
-<h3 id="savewrite-changes">Save/Write Changes</h3>
-<h3 id="save-and-quit">Save and Quit</h3>
-<h3 id="quit-without-saving">Quit Without Saving</h3>
+<ul>
+<li>Emacs is always in insert mode by default, so you can simply start typing.</li>
+</ul>
+<h3 id="save-changes">Save Changes</h3>
+<ul>
+<li>To save your file, type <code>CTRL+X</code> followed by <code>CTRL+S</code>.</li>
+</ul>
+<h3 id="quit">Quit</h3>
+<ul>
+<li>Type <code>CTRL+X</code> followed by <code>CTRL+C</code>. You can quit without saving by skipping the saving step.</li>
+</ul>
 <h3 id="search-for-text">Search for Text</h3>
+<ul>
+<li>To start a forward search, type <code>CTRL+S</code>.</li>
+<li>To start a backward search, type <code>CTRL+R</code></li>
+<li><code>Emacs</code> performs incremental search by default, so as you type the pattern, it immediately searches.</li>
+<li>Pres <code>CTRL+S</code> or <code>CTRL+R</code> again to continue searching in the same direction.</li>
+<li>Press <code>Enter</code> to finish the search and leave the cursor on the match.</li>
+<li>Press <code>CTRL+G</code> to cancel the search and return to the original position.
+<strong>Regex in Search</strong>
+By default, searching in <code>Emacs</code> is literal. </li>
+<li>To use <strong>regex</strong> instead, type <code>META+CTRL+S</code> (<code>ALT+CTRL+S</code>).</li>
+<li>You can toggle between literal and regex search with <code>META+R</code> (<code>ALT+R</code>) during a search.</li>
+</ul>
 
 
 
