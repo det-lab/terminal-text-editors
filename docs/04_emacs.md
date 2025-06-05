@@ -18,22 +18,39 @@ From the terminal, you can create or open a file by entering the appropriate dir
 ```bash
 emacs filename.txt
 ```
+
 * This opens the specified file in a new `Emacs` window. If the file doesn't exist yet, `Emacs` will create it when you save.
+
 You can also start `Emacs` and open a file from within it by pressing `CTRL+X` and then `CTRL+F`.
 ### Edit or Insert Text
+
 * Emacs is always in insert mode by default, so you can simply start typing.
+
 ### Save Changes
+
 * To save your file, type `CTRL+X` followed by `CTRL+S`.
+
 ### Quit
+
 * Type `CTRL+X` followed by `CTRL+C`. You can quit without saving by skipping the saving step.
+
 ### Search for Text
+
 * To start a forward search, type `CTRL+S`.
+
 * To start a backward search, type `CTRL+R`
+
 * `Emacs` performs incremental search by default, so as you type the pattern, it immediately searches.
+
 * Pres `CTRL+S` or `CTRL+R` again to continue searching in the same direction.
+
 * Press `Enter` to finish the search and leave the cursor on the match.
+
 * Press `CTRL+G` to cancel the search and return to the original position.
+
 **Regex in Search**
 By default, searching in `Emacs` is literal. 
+
 * To use **regex** instead, type `META+CTRL+S` (`ALT+CTRL+S`).
+
 * You can toggle between literal and regex search with `META+R` (`ALT+R`) during a search.

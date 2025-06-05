@@ -4,11 +4,17 @@ From the top of this lesson it should be stated that terminal-based/command-line
 In general, it's recommended to avoid terminal-based text editors unless you have to use them. There are a few times when command-line editing will pop-up automatically, but for the most part these can be rerouted to use GUI editors as well. For instance, here is a [tutorial for running SSH from Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh), and here's another one for [making Visual Studio Code your default git editor](https://dev.to/deadlybyte/make-vs-code-your-default-git-editor-j6d) (although you can also avoid being in an editor for git by using an application such as Github Desktop or by using the command `git commit -m "commit message here"`).
 
 All that being said: when utilized to their fullest, text editors can streamline several tasks in ways that GUIs would struggle to match. In this lesson, we're going to go over the bare-bones basics of terminal-based text editors for the three most common options: `Vim`, `Emacs`, and `nano`, with short instructions for each on how to:
+
 * Open a file,
+
 * Edit or insert text into a file,
+
 * Save a file and keep your changes,
+
 * Close a file and/or discard your changes, and
+
 * Search for text within a file.
+
 ## Choosing an editor
 When selecting an editor, the right choice for you will depend on your needs, experience level, and editing habits:
 

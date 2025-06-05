@@ -18,6 +18,7 @@ nano filename.txt
 ### Edit or Insert Text
 
 * Simply start typing. `nano` is always in insert mode.
+
 * Use arrow keys to move the cursor. 
 
 ### Save/Write Changes
@@ -32,12 +33,17 @@ If you've made unsaved changes, `nano` will ask:
 ```java
 Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?
 ```
+
 * Press `N` to **discard changes** and exit.
 
 ### Search for Text
+
 * Press `CTRL+W`
+
 * Type your search term and press `Enter`
+
 * Press `CTRL+W` again and then `Enter` to find the next match.
+
 By default, `nano` does not use regex. It instead searches using plain text. However, you can enable regex with the `-R` or `--regexp` option:
 ```bash
 nano --regexp filename.txt
