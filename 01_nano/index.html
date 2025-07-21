@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../03_vim/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../02_vim/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Emacs - Terminal-Based Text Editors</title>
+        <title>Nano - Terminal-Based Text Editors</title>
       
     
     
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#emacs-basics" class="md-skip">
+        <a href="#nano" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Emacs
+              Nano
             
           </span>
         </div>
@@ -211,72 +213,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_introduction/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_nano/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Nano
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_vim/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vim
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -294,7 +230,7 @@
   
   
   <span class="md-ellipsis">
-    Emacs
+    Nano
     
   </span>
   
@@ -307,7 +243,7 @@
   
   
   <span class="md-ellipsis">
-    Emacs
+    Nano
     
   </span>
   
@@ -358,18 +294,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-changes" class="md-nav__link">
+  <a href="#savewrite-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Save Changes
+      Save/Write Changes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quit" class="md-nav__link">
+  <a href="#close-the-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Quit
+      Close the File
     </span>
   </a>
   
@@ -393,6 +329,50 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_vim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_emacs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Emacs
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -452,18 +432,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#save-changes" class="md-nav__link">
+  <a href="#savewrite-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      Save Changes
+      Save/Write Changes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quit" class="md-nav__link">
+  <a href="#close-the-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Quit
+      Close the File
     </span>
   </a>
   
@@ -499,69 +479,61 @@
 
 
 
-<h1 id="emacs-basics">Emacs Basics</h1>
-<p><code>GNU Emacs</code>, or more simply: <code>Emacs</code>, is a family of text editors notable for their extensibility. As mentioned before, <code>Emacs</code> has a steeper learning curve than the other two options, with over 10,000 built-in commands and a UI which allows for these commands to be combined into automated macros, giving us the name of the software from "Editor Macros."  </p>
-<p>The latest version of <code>Emacs</code> can be downloaded by following <a href="https://www.gnu.org/software/emacs/download.html">this link to the official site.</a> You can also install it from the terminal by running:</p>
-<pre><code class="language-bash">sudo apt-get install emacs
-</code></pre>
-<p>You can then open <code>Emacs</code> by typing:</p>
-<pre><code class="language-bash">emacs
-</code></pre>
-<p>And pressing <code>Enter</code>. This will open the graphical window, which should look similar to this depending on your installation:
-<img alt="Emacs installation screen" src="../images/Emacs-startup.png" /></p>
+<h1 id="nano">Nano</h1>
+<p>One of the main benefits to <code>nano</code> is the two help lines at the bottom of the window, showing you a list of commands that you can use. </p>
+<p><img alt="nano window" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/GNU_nano-6.4_screenshot.png/800px-GNU_nano-6.4_screenshot.png" /></p>
+<p>Each of the <code>^</code> symbols is meant to be typed by the user as <code>CTRL</code>, so you can access <code>Help</code> as <code>CTRL+G</code>, <code>Exit</code> by typing <code>CTRL+X</code>, etc.</p>
+<p>The latest version of <code>nano</code> can be downloaded by following <a href="https://www.nano-editor.org/download.php">this link to the official site.</a></p>
 <h2 id="basic-commands">Basic Commands:</h2>
-<p><code>Emacs</code> commands will generally involve the CONTROL (CTRL or CTL) key and the META key (sometimes EDIT or ALT). It is recommended to follow along with the <code>Emacs Tutorial</code> section which is the first link visible on startup.</p>
+<p>Here are the core actions that you'll use most often in <code>nano</code>.</p>
 <h3 id="open-a-file">Open a File</h3>
-<p>From the terminal, you can create or open a file by entering the appropriate directory and entering:</p>
-<pre><code class="language-bash">emacs filename.txt
+<pre><code class="language-bash">nano filename.txt
 </code></pre>
 <ul>
-<li>This opens the specified file in a new <code>Emacs</code> window. If the file doesn't exist yet, <code>Emacs</code> will create it when you save.</li>
+<li>Opens the file if it exists, or creates a new one if it doesn't.</li>
 </ul>
-<p>You can also start <code>Emacs</code> and open a file from within it by pressing <code>CTRL+X</code> and then <code>CTRL+F</code>.</p>
 <h3 id="edit-or-insert-text">Edit or Insert Text</h3>
 <ul>
-<li>Emacs is always in insert mode by default, so you can simply start typing.</li>
+<li>
+<p>Simply start typing. <code>nano</code> is always in insert mode.</p>
+</li>
+<li>
+<p>Use arrow keys to move the cursor. </p>
+</li>
 </ul>
-<h3 id="save-changes">Save Changes</h3>
+<h3 id="savewrite-changes">Save/Write Changes</h3>
 <ul>
-<li>To save your file, type <code>CTRL+X</code> followed by <code>CTRL+S</code>.</li>
+<li>Press <code>CTRL+O</code> (<code>Write Out</code> option)</li>
 </ul>
-<h3 id="quit">Quit</h3>
+<h3 id="close-the-file">Close the File</h3>
 <ul>
-<li>Type <code>CTRL+X</code> followed by <code>CTRL+C</code>. You can quit without saving by skipping the saving step.</li>
+<li>Press <code>CTRL+X</code></li>
+</ul>
+<p>If you've made unsaved changes, <code>nano</code> will ask:</p>
+<pre><code class="language-java">Save modified buffer (ANSWERING &quot;No&quot; WILL DESTROY CHANGES)?
+</code></pre>
+<ul>
+<li>Press <code>N</code> to <strong>discard changes</strong> and exit.</li>
 </ul>
 <h3 id="search-for-text">Search for Text</h3>
 <ul>
 <li>
-<p>To start a forward search, type <code>CTRL+S</code>.</p>
+<p>Press <code>CTRL+W</code></p>
 </li>
 <li>
-<p>To start a backward search, type <code>CTRL+R</code></p>
+<p>Type your search term and press <code>Enter</code></p>
 </li>
 <li>
-<p><code>Emacs</code> performs incremental search by default, so as you type the pattern, it immediately searches.</p>
-</li>
-<li>
-<p>Pres <code>CTRL+S</code> or <code>CTRL+R</code> again to continue searching in the same direction.</p>
-</li>
-<li>
-<p>Press <code>Enter</code> to finish the search and leave the cursor on the match.</p>
-</li>
-<li>
-<p>Press <code>CTRL+G</code> to cancel the search and return to the original position.</p>
+<p>Press <code>CTRL+W</code> again and then <code>Enter</code> to find the next match.</p>
 </li>
 </ul>
-<p><strong>Regex in Search</strong>
-By default, searching in <code>Emacs</code> is literal. </p>
-<ul>
-<li>
-<p>To use <strong>regex</strong> instead, type <code>META+CTRL+S</code> (<code>ALT+CTRL+S</code>).</p>
-</li>
-<li>
-<p>You can toggle between literal and regex search with <code>META+R</code> (<code>ALT+R</code>) during a search.</p>
-</li>
-</ul>
+<p>By default, <code>nano</code> does not use regex. It instead searches using plain text. However, you can enable regex with the <code>-R</code> or <code>--regexp</code> option:</p>
+<pre><code class="language-bash">nano --regexp filename.txt
+</code></pre>
+<p>Now when you press <code>CTRL+W</code> to start a search you can type a regular expression pattern and then press <code>Enter</code> to find matches.</p>
+<p>For further questions regarding <code>nano</code>, refer to the documentation by following <a href="https://www.nano-editor.org/docs.php">this link.</a></p>
+<hr />
+<p><a href="../02_vim/">Click here</a> to continue on to the next section to learn the basics for <code>Vim</code>.</p>
 
 
 
