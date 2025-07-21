@@ -105,4 +105,4 @@ and press `Enter`.
 
 ---
 
-[Click here](04_emacs.md) to continue to the next section to learn the basics for `Emacs`.
+[Click here](03_emacs.md) to continue to the next section to learn the basics for `Emacs`.

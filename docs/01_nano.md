@@ -54,4 +54,4 @@ For further questions regarding `nano`, refer to the documentation by following 
 
 ---
 
-[Click here](03_vim.md) to continue on to the next section to learn the basics for `Vim`.
+[Click here](02_vim.md) to continue on to the next section to learn the basics for `Vim`.
