@@ -1,6 +1,6 @@
 site_name: Terminal-Based Text Editors
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Nano: 01_nano.md
   - Vim: 02_vim.md
   - Emacs: 03_emacs.md
