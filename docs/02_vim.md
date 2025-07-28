@@ -1,7 +1,7 @@
 # Vim Basics
-`Vim` is customizable and extensible, making it especially useful for users who want a more flexible environment at the cost of creating a slightly steeper learning curve that makes it less accessible for beginners. 
+`Vim` is a terminal text-editor that is customizable and extensible. `Vim` distinguishes between "command mode" where the user enters commands, and "edit mode" where the user enters text.
 
-The latest version of `Vim` can be downloaded by following [this link to the official site.](https://www.vim.org/download.php). You can also install it from your terminal by running:
+On macOS and Linux, `Vim` is typically installed by default. For users running WSL, you can install `Vim` from your terminal by entering the command:
 ```bash
 sudo apt-get install vim
 ```
@@ -13,25 +13,26 @@ This will open a screen like the following, displaying info about `Vim` and some
 
 ![Vim startup](images/Vim-startup.png)
 
-One of the more important concepts in `Vim` is working with "modes." Depending on the mode, typed characters can be interpreted by `Vim` as sequences of commands or they can be inserted as text. There are 7 BASIC modes, and 7 ADDITIONAL modes which are variants of the BASIC modes. For more information about modes, follow [this link](https://vimhelp.org/intro.txt.html#vim-modes-intro) to the official documentation.
+One of the more important concepts in `Vim` is working with "modes." Depending on the mode, typed characters can be interpreted by `Vim` as sequences of commands or they can be inserted as text. There are 14 modes, but there are only three that we need to learn about for this lesson: `Normal`, `Command-line` mode and `Insert` mode. For more information about modes, follow [this link](https://vimhelp.org/intro.txt.html#vim-modes-intro) to the official documentation.
 
 ## Basic Commands:
-For the basic commands in `Vim`, the only modes you'll need to switch between are Normal/Command mode, Insert mode, and Command-line/Cmdline mode. 
+In everyday use, you only need to worry about three main modes in Vim:
+
+* Normal mode: for moving around and running commands
+
+* Insert mode: for typing and editing text
+
+* Command-line mode: for things like `:w` (save the file), `/search` (search for text), or `:q!` (quit without saving).
 
 Here's a quick chart on switching between the relevant modes:
-| FROM $\downarrow$ TO $\to$ | Normal | Insert                       | Cmdline    |
-| ---                        |  ---   |  ---                         |  ---       |
-| Normal                     |        | i, I, a, A, o, O, c, C, s, S | :, /, ?, ! |
-| Insert                     | Esc    |                              | N/A        |
-| Command-line               | *1     | :start                       |            |
+
+| You are in $\downarrow$ | To Normal                                                                                                                  | To Insert                                                                              | To Cmdline            |
+| ---                     |  ---                                                                                                                       |  ---                                                                                   |  ---                  |
+| Normal                  | (you're already here)                                                                                                      | `i` – insert before cursor<br>`A` – append at end of line<br>`o` – open new line below | :, /, ?, !            |
+| Insert                  | Esc                                                                                                                        | (you're already here)                                                                  | N/A                   |
+| Command-line            | `Enter` executes the command, returning to normal mode<br>`CTRL+C` or `ESC` quits to normal mode without executing command | :start                                                                                 | (you're already here) |
+
 For a more complete chart showing the switch commands between all 7 BASIC modes, follow [this link](https://vimhelp.org/intro.txt.html#mode-switching) to the official documentation.
-*1 - Go from Command-line to Normal by:
-
-* Hitting <CR> or <NL>, which causes the entered command to be executed.
-
-* Deleting the complete line, such as with `CTRL+U`, and giving a final <BS>.
-
-* Hitting `CTRL+C` or `Esc`, which quits without executing the command.
 
 ### Open a File
 ```bash
@@ -42,7 +43,7 @@ vim filename.txt
 
 ### Edit or Insert Text
 
-* Switch to Insert mode with one of the above commands.
+* Switch to Insert mode by typing `i`.
 
 * You can now type and edit text as in a regular editor.
 
@@ -85,7 +86,7 @@ and press `Enter`.
 
 * `N` will search in the opposite direction.
 
-* `vim` uses regex by default in searches.
+* `vim` uses regex by default in searches. If you're unfamiliar with using regex, [here is a lesson on using regex](https://carpentries-incubator.github.io/regex-novice-biology/), and [here is a website for testing your expressions](https://regex101.com/).
 
 * Searches are case-sensitive by default. Add `\c` to make a search case-insensitive:
 
