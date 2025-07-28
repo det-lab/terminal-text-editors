@@ -199,7 +199,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Introduction
     
   </span>
   
@@ -498,8 +498,8 @@
 
 
 <h1 id="vim-basics">Vim Basics</h1>
-<p><code>Vim</code> is customizable and extensible, making it especially useful for users who want a more flexible environment at the cost of creating a slightly steeper learning curve that makes it less accessible for beginners. </p>
-<p>The latest version of <code>Vim</code> can be downloaded by following <a href="https://www.vim.org/download.php">this link to the official site.</a>. You can also install it from your terminal by running:</p>
+<p><code>Vim</code> is a terminal text-editor that is customizable and extensible. <code>Vim</code> distinguishes between "command mode" where the user enters commands, and "edit mode" where the user enters text.</p>
+<p>On macOS and Linux, <code>Vim</code> is typically installed by default. For users running WSL, you can install <code>Vim</code> from your terminal by entering the command:</p>
 <pre><code class="language-bash">sudo apt-get install vim
 </code></pre>
 <p>From there, to open <code>Vim</code>, simply enter:</p>
@@ -507,28 +507,52 @@
 </code></pre>
 <p>This will open a screen like the following, displaying info about <code>Vim</code> and some instructions for exiting the editor or finding help.</p>
 <p><img alt="Vim startup" src="../images/Vim-startup.png" /></p>
-<p>One of the more important concepts in <code>Vim</code> is working with "modes." Depending on the mode, typed characters can be interpreted by <code>Vim</code> as sequences of commands or they can be inserted as text. There are 7 BASIC modes, and 7 ADDITIONAL modes which are variants of the BASIC modes. For more information about modes, follow <a href="https://vimhelp.org/intro.txt.html#vim-modes-intro">this link</a> to the official documentation.</p>
+<p>One of the more important concepts in <code>Vim</code> is working with "modes." Depending on the mode, typed characters can be interpreted by <code>Vim</code> as sequences of commands or they can be inserted as text. There are 14 modes, but there are only three that we need to learn about for this lesson: <code>Normal</code>, <code>Command-line</code> mode and <code>Insert</code> mode. For more information about modes, follow <a href="https://vimhelp.org/intro.txt.html#vim-modes-intro">this link</a> to the official documentation.</p>
 <h2 id="basic-commands">Basic Commands:</h2>
-<p>For the basic commands in <code>Vim</code>, the only modes you'll need to switch between are Normal/Command mode, Insert mode, and Command-line/Cmdline mode. </p>
-<p>Here's a quick chart on switching between the relevant modes:
-| FROM <span class="arithmatex">\(\downarrow\)</span> TO <span class="arithmatex">\(\to\)</span> | Normal | Insert                       | Cmdline    |
-| ---                        |  ---   |  ---                         |  ---       |
-| Normal                     |        | i, I, a, A, o, O, c, C, s, S | :, /, ?, ! |
-| Insert                     | Esc    |                              | N/A        |
-| Command-line               | <em>1     | :start                       |            |
-For a more complete chart showing the switch commands between all 7 BASIC modes, follow <a href="https://vimhelp.org/intro.txt.html#mode-switching">this link</a> to the official documentation.
-</em>1 - Go from Command-line to Normal by:</p>
+<p>In everyday use, you only need to worry about three main modes in Vim:</p>
 <ul>
 <li>
-<p>Hitting <CR> or <NL>, which causes the entered command to be executed.</p>
+<p>Normal mode: for moving around and running commands</p>
 </li>
 <li>
-<p>Deleting the complete line, such as with <code>CTRL+U</code>, and giving a final <BS>.</p>
+<p>Insert mode: for typing and editing text</p>
 </li>
 <li>
-<p>Hitting <code>CTRL+C</code> or <code>Esc</code>, which quits without executing the command.</p>
+<p>Command-line mode: for things like <code>:w</code> (save the file), <code>/search</code> (search for text), or <code>:q!</code> (quit without saving).</p>
 </li>
 </ul>
+<p>Here's a quick chart on switching between the relevant modes:</p>
+<table>
+<thead>
+<tr>
+<th>You are in <span class="arithmatex">\(\downarrow\)</span></th>
+<th>To Normal</th>
+<th>To Insert</th>
+<th>To Cmdline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>(you're already here)</td>
+<td><code>i</code> – insert before cursor<br><code>A</code> – append at end of line<br><code>o</code> – open new line below</td>
+<td>:, /, ?, !</td>
+</tr>
+<tr>
+<td>Insert</td>
+<td>Esc</td>
+<td>(you're already here)</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Command-line</td>
+<td><code>Enter</code> executes the command, returning to normal mode<br><code>CTRL+C</code> or <code>ESC</code> quits to normal mode without executing command</td>
+<td>:start</td>
+<td>(you're already here)</td>
+</tr>
+</tbody>
+</table>
+<p>For a more complete chart showing the switch commands between all 7 BASIC modes, follow <a href="https://vimhelp.org/intro.txt.html#mode-switching">this link</a> to the official documentation.</p>
 <h3 id="open-a-file">Open a File</h3>
 <pre><code class="language-bash">vim filename.txt
 </code></pre>
@@ -538,7 +562,7 @@ For a more complete chart showing the switch commands between all 7 BASIC modes,
 <h3 id="edit-or-insert-text">Edit or Insert Text</h3>
 <ul>
 <li>
-<p>Switch to Insert mode with one of the above commands.</p>
+<p>Switch to Insert mode by typing <code>i</code>.</p>
 </li>
 <li>
 <p>You can now type and edit text as in a regular editor.</p>
@@ -593,7 +617,7 @@ For a more complete chart showing the switch commands between all 7 BASIC modes,
 <p><code>N</code> will search in the opposite direction.</p>
 </li>
 <li>
-<p><code>vim</code> uses regex by default in searches.</p>
+<p><code>vim</code> uses regex by default in searches. If you're unfamiliar with using regex, <a href="https://carpentries-incubator.github.io/regex-novice-biology/">here is a lesson on using regex</a>, and <a href="https://regex101.com/">here is a website for testing your expressions</a>.</p>
 </li>
 <li>
 <p>Searches are case-sensitive by default. Add <code>\c</code> to make a search case-insensitive:</p>

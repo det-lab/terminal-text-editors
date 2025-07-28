@@ -197,7 +197,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Introduction
     
   </span>
   
@@ -479,7 +479,7 @@
 
 <h1 id="emacs-basics">Emacs Basics</h1>
 <p><code>GNU Emacs</code>, or more simply: <code>Emacs</code>, is a family of text editors notable for their extensibility. As mentioned before, <code>Emacs</code> has a steeper learning curve than the other two options, with over 10,000 built-in commands and a UI which allows for these commands to be combined into automated macros, giving us the name of the software from "Editor Macros."  </p>
-<p>The latest version of <code>Emacs</code> can be downloaded by following <a href="https://www.gnu.org/software/emacs/download.html">this link to the official site.</a> You can also install it from the terminal by running:</p>
+<p>On macOS and Linux, <code>Emacs</code> is typically installed by default. For users running WSL, you can install it from the terminal by running:</p>
 <pre><code class="language-bash">sudo apt-get install emacs
 </code></pre>
 <p>You can then open <code>Emacs</code> by typing:</p>
@@ -488,7 +488,7 @@
 <p>And pressing <code>Enter</code>. This will open the graphical window, which should look similar to this depending on your installation:
 <img alt="Emacs installation screen" src="../images/Emacs-startup.png" /></p>
 <h2 id="basic-commands">Basic Commands:</h2>
-<p><code>Emacs</code> commands will generally involve the CONTROL (CTRL or CTL) key and the META key (sometimes EDIT or ALT). It is recommended to follow along with the <code>Emacs Tutorial</code> section which is the first link visible on startup.</p>
+<p><code>Emacs</code> commands will generally involve the CONTROL (CTRL or CTL) key and the META key (sometimes EDIT or ALT).</p>
 <h3 id="open-a-file">Open a File</h3>
 <p>From the terminal, you can create or open a file by entering the appropriate directory and entering:</p>
 <pre><code class="language-bash">emacs filename.txt
@@ -521,7 +521,7 @@
 <p><code>Emacs</code> performs incremental search by default, so as you type the pattern, it immediately searches.</p>
 </li>
 <li>
-<p>Pres <code>CTRL+S</code> or <code>CTRL+R</code> again to continue searching in the same direction.</p>
+<p>Press <code>CTRL+S</code> or <code>CTRL+R</code> again to continue searching in the same direction.</p>
 </li>
 <li>
 <p>Press <code>Enter</code> to finish the search and leave the cursor on the match.</p>
@@ -534,7 +534,7 @@
 By default, searching in <code>Emacs</code> is literal. </p>
 <ul>
 <li>
-<p>To use <strong>regex</strong> instead, type <code>META+CTRL+S</code> (<code>ALT+CTRL+S</code>).</p>
+<p>To use <strong>regex</strong> instead, type <code>META+CTRL+S</code> (<code>ALT+CTRL+S</code>). If you're unfamiliar with using regex, <a href="https://carpentries-incubator.github.io/regex-novice-biology/">here is a lesson on using regex</a>, and <a href="https://regex101.com/">here is a website for testing your expressions</a>.</p>
 </li>
 <li>
 <p>You can toggle between literal and regex search with <code>META+R</code> (<code>ALT+R</code>) during a search.</p>

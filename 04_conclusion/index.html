@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../02_vim/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Nano - Terminal-Based Text Editors</title>
+        <title>Conclusion - Terminal-Based Text Editors</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nano" class="md-skip">
+        <a href="#conclusion" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nano
+              Conclusion
             
           </span>
         </div>
@@ -213,32 +209,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Nano
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_nano/" class="md-nav__link">
         
   
   
@@ -249,86 +223,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Basic Commands:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#open-a-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open a File
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-or-insert-text" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edit or Insert Text
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savewrite-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Save/Write Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#close-the-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Close the File
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#search-for-text" class="md-nav__link">
-    <span class="md-ellipsis">
-      Search for Text
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,74 +291,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Commands:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Basic Commands:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#open-a-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open a File
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-or-insert-text" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edit or Insert Text
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savewrite-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Save/Write Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#close-the-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Close the File
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#search-for-text" class="md-nav__link">
-    <span class="md-ellipsis">
-      Search for Text
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -479,62 +305,26 @@
 
 
 
-<h1 id="nano">Nano</h1>
-<p>One of the main benefits to <code>nano</code> is the two help lines at the bottom of the window, showing you a list of commands that you can use. </p>
-<p><img alt="nano window" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/GNU_nano-6.4_screenshot.png/800px-GNU_nano-6.4_screenshot.png" /></p>
-<p>Each of the <code>^</code> symbols is meant to be typed by the user as <code>CTRL</code>, so you can access <code>Help</code> as <code>CTRL+G</code>, <code>Exit</code> by typing <code>CTRL+X</code>, etc.</p>
-<p>The latest version of <code>nano</code> can be downloaded by following <a href="https://www.nano-editor.org/download.php">this link to the official site.</a></p>
-<h2 id="basic-commands">Basic Commands:</h2>
-<p>Here are the core actions that you'll use most often in <code>nano</code>.</p>
-<h3 id="open-a-file">Open a File</h3>
-<pre><code class="language-bash">nano filename.txt
-</code></pre>
-<ul>
-<li>Opens the file if it exists, or creates a new one if it doesn't.</li>
-</ul>
-<h3 id="edit-or-insert-text">Edit or Insert Text</h3>
+<h1 id="conclusion">Conclusion</h1>
+<p>After following the sections from this lesson for <code>nano</code>, <code>Vim</code>, and <code>Emacs</code>, you should hopefully be able to:</p>
 <ul>
 <li>
-<p>Simply start typing. <code>nano</code> is always in "insert mode". Insert mode means text will appear in the document as you type it. This is what most users expect the behavior to be, similar to a Word or Google document. </p>
+<p>Open a file</p>
 </li>
 <li>
-<p>Use arrow keys to move the cursor. </p>
-</li>
-</ul>
-<h3 id="savewrite-changes">Save/Write Changes</h3>
-<ul>
-<li>Press <code>CTRL+O</code> (<code>Write Out</code> option). This saves the changes to the filename - before this command, your changes are not permanent.</li>
-</ul>
-<h3 id="close-the-file">Close the File</h3>
-<ul>
-<li>Press <code>CTRL+X</code> (<code>Exit</code> option). </li>
-</ul>
-<p>If you've made unsaved changes, <code>nano</code> will ask:</p>
-<pre><code class="language-java">Save modified buffer (ANSWERING &quot;No&quot; WILL DESTROY CHANGES)?
-</code></pre>
-<ul>
-<li>Press <code>N</code> to <strong>discard changes</strong> and exit.</li>
-</ul>
-<h3 id="search-for-text">Search for Text</h3>
-<ul>
-<li>
-<p>Press <code>CTRL+W</code> (<code>Where Is</code>).</p>
+<p>Edit a file</p>
 </li>
 <li>
-<p>Type your search term and press <code>Enter</code></p>
+<p>Save a file</p>
 </li>
 <li>
-<p>Press <code>CTRL+W</code> again and then <code>Enter</code> to find the next match.</p>
+<p>Search for text within a file</p>
+</li>
+<li>
+<p>Exit the text editor (with or without saving)</p>
 </li>
 </ul>
-<p>By default, <code>nano</code> does not use regex, or "regular expressions". If you're unfamiliar with using regex, <a href="https://carpentries-incubator.github.io/regex-novice-biology/">here is a lesson on using regex</a>, and <a href="https://regex101.com/">here is a website for testing your expressions</a>. </p>
-<p>Nano instead searches using plain text. However, you can enable regex with the <code>-R</code> or <code>--regexp</code> option:</p>
-<pre><code class="language-bash">nano --regexp filename.txt
-</code></pre>
-<p>Now when you press <code>CTRL+W</code> to start a search you can type a regular expression pattern and then press <code>Enter</code> to find matches.</p>
-<p>For further questions regarding <code>nano</code>, refer to the documentation by following <a href="https://www.nano-editor.org/docs.php">this link.</a></p>
-<hr />
-<p><a href="../02_vim/">Click here</a> to continue on to the next section to learn the basics for <code>Vim</code>.</p>
+<p>This tutorial does not go into great depth to describe any of the three text editors mentioned. If you're wanting to use any of the text editors frequently (which we do not advise unless you are frequently working remotely) we recommended that you find a textbook that goes into extensive detail about all of your editors available features. </p>
 
 
 
