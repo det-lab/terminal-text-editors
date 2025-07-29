@@ -492,23 +492,26 @@
 <ul>
 <li>Opens the file if it exists, or creates a new one if it doesn't.</li>
 </ul>
+<p><img alt="create file" src="../images/nano-open-file.gif" /></p>
 <h3 id="edit-or-insert-text">Edit or Insert Text</h3>
 <ul>
 <li>
 <p>Simply start typing. <code>nano</code> is always in "insert mode". Insert mode means text will appear in the document as you type it. This is what most users expect the behavior to be, similar to a Word or Google document. </p>
 </li>
 <li>
-<p>Use arrow keys to move the cursor. </p>
+<p>You can use the arrow keys to move the cursor. </p>
 </li>
 </ul>
+<p><img alt="edit file" src="../images/nano-edit-file.gif" /></p>
 <h3 id="savewrite-changes">Save/Write Changes</h3>
 <ul>
-<li>Press <code>CTRL+O</code> (<code>Write Out</code> option). This saves the changes to the filename - before this command, your changes are not permanent.</li>
+<li>Press <code>CTRL+O</code> (<code>Write Out</code> option). This saves the changes to the file - before this command, your changes are not permanent.</li>
 </ul>
 <h3 id="close-the-file">Close the File</h3>
 <ul>
-<li>Press <code>CTRL+X</code> (<code>Exit</code> option). </li>
+<li>Press <code>CTRL+X</code> (<code>Exit</code> option).</li>
 </ul>
+<p><img alt="save and exit" src="../images/nano-save-and-exit.gif" /></p>
 <p>If you've made unsaved changes, <code>nano</code> will ask:</p>
 <pre><code class="language-java">Save modified buffer (ANSWERING &quot;No&quot; WILL DESTROY CHANGES)?
 </code></pre>
@@ -527,6 +530,7 @@
 <p>Press <code>CTRL+W</code> again and then <code>Enter</code> to find the next match.</p>
 </li>
 </ul>
+<p><img alt="search" src="../images/nano-search.gif" /></p>
 <p>By default, <code>nano</code> does not use regex, or "regular expressions". If you're unfamiliar with using regex, <a href="https://carpentries-incubator.github.io/regex-novice-biology/">here is a lesson on using regex</a>, and <a href="https://regex101.com/">here is a website for testing your expressions</a>. </p>
 <p>Nano instead searches using plain text. However, you can enable regex with the <code>-R</code> or <code>--regexp</code> option:</p>
 <pre><code class="language-bash">nano --regexp filename.txt
