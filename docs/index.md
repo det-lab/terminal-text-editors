@@ -26,6 +26,8 @@ When selecting an editor, the right choice for you will depend on your needs, ex
 
 This lesson will be working under the assumption that you know how to use a GNU/Linux shell, such as Ubuntu or Debian. If you don't, follow [these instructions from Software Carpentry](https://swcarpentry.github.io/shell-novice/) to install it for your OS.
 
+>If you are new to programming, it's recommended that you first take a few minutes to go over [this short lesson](https://det-lab.github.io/reading-documentation/) talking about how to read technical documentation.
+
 ---
 
 Follow any of these links to go to the specific editor you wish to use:
