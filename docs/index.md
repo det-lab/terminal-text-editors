@@ -28,4 +28,10 @@ This lesson will be working under the assumption that you know how to use a GNU/
 
 ---
 
-Let's get started by learning the basics of the easiest of the three options: `nano`. [Click here](01_nano.md) to continue on to the next section.
+Follow any of these links to go to the specific editor you wish to use:
+
+* [nano](01_nano.md)
+
+* [Vim](02_vim.md)
+
+* [Emacs](03_emacs.md)

@@ -15,19 +15,25 @@ nano filename.txt
 ```
 * Opens the file if it exists, or creates a new one if it doesn't.
 
+![create file](images/open-file.gif)
+
 ### Edit or Insert Text
 
 * Simply start typing. `nano` is always in "insert mode". Insert mode means text will appear in the document as you type it. This is what most users expect the behavior to be, similar to a Word or Google document. 
 
-* Use arrow keys to move the cursor. 
+* You can use the arrow keys to move the cursor. 
+
+![edit file](images/edit-file.gif)
 
 ### Save/Write Changes
 
-* Press `CTRL+O` (`Write Out` option). This saves the changes to the filename - before this command, your changes are not permanent.
+* Press `CTRL+O` (`Write Out` option). This saves the changes to the file - before this command, your changes are not permanent.
 
 ### Close the File
 
-* Press `CTRL+X` (`Exit` option). 
+* Press `CTRL+X` (`Exit` option).
+
+![save and exit](images/save-and-exit.gif)
 
 If you've made unsaved changes, `nano` will ask:
 ```java
@@ -43,6 +49,8 @@ Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?
 * Type your search term and press `Enter`
 
 * Press `CTRL+W` again and then `Enter` to find the next match.
+
+![search](images/search.gif)
 
 By default, `nano` does not use regex, or "regular expressions". If you're unfamiliar with using regex, [here is a lesson on using regex](https://carpentries-incubator.github.io/regex-novice-biology/), and [here is a website for testing your expressions](https://regex101.com/). 
 
