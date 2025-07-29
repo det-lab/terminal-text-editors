@@ -15,7 +15,7 @@ nano filename.txt
 ```
 * Opens the file if it exists, or creates a new one if it doesn't.
 
-![create file](images/open-file.gif)
+![create file](images/nano-open-file.gif)
 
 ### Edit or Insert Text
 
@@ -23,7 +23,7 @@ nano filename.txt
 
 * You can use the arrow keys to move the cursor. 
 
-![edit file](images/edit-file.gif)
+![edit file](images/nano-edit-file.gif)
 
 ### Save/Write Changes
 
@@ -33,7 +33,7 @@ nano filename.txt
 
 * Press `CTRL+X` (`Exit` option).
 
-![save and exit](images/save-and-exit.gif)
+![save and exit](images/nano-save-and-exit.gif)
 
 If you've made unsaved changes, `nano` will ask:
 ```java
@@ -50,7 +50,7 @@ Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?
 
 * Press `CTRL+W` again and then `Enter` to find the next match.
 
-![search](images/search.gif)
+![search](images/nano-search.gif)
 
 By default, `nano` does not use regex, or "regular expressions". If you're unfamiliar with using regex, [here is a lesson on using regex](https://carpentries-incubator.github.io/regex-novice-biology/), and [here is a website for testing your expressions](https://regex101.com/). 
 

@@ -41,17 +41,23 @@ vim filename.txt
 
 * Opens the file for editing. If one doesn't exist, `vim` automatically creates a new one.
 
+![open file](images/vim-open-file.gif)
+
 ### Edit or Insert Text
 
 * Switch to Insert mode by typing `i`.
 
 * You can now type and edit text as in a regular editor.
 
+![edit file](images/vim-edit.gif)
+
 ### Save Changes
 
 * Ensure you are in Normal mode by pressing the `Esc` key.
 
 * Type `:w` and press `Enter` (This writes the file to disk.)
+
+![save file](images/vim-save.gif)
 
 ### Save and Quit
 
@@ -61,6 +67,8 @@ vim filename.txt
 :wq
 ```
 and press `Enter`.
+
+![exit file](images/vim-exit.gif)
 ### Quit Without Saving
 
 * Press `Esc`, then type:
